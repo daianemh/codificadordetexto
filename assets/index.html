@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de texto</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/toast.css">
+    
+</head>
+<body class="dark">
+    <header class="header">
+        <div class="header-content">
+            <img class="logo" src="assets/images/logoalura.jpeg">
+            <button class="btn-theme"> <img src="assets/images/codigo.jpeg" alt=""></button>
+        </div>
+    </header>
+    <main class="container">
+        <form class="form">
+            <textarea class="textarea" placeholder="Digite seu texto..."></textarea>
+            <label class="label">Apenas letras minusculas e sem acento</label>
+            <div class="form__buttons">
+                <button id="btn-encrypt" class="btn btn-primary" type="button">Criptografar</button>
+                <button id="btn-decrypt" class="btn" type="button">Descriptografar</button>
+            </div>
+        </form>
+        <div class="result-container">
+            <div class="no-result">
+                <img class="no-result__image" src="assets/images/bonecolupa.png" alt="boneco com lupa">
+                <h2 class="no-result__title">Nenhuma mensagem encontrada</h2>
+                <p class="no-result__text">Digite um texto para criptografar ou descriptografar</p>
+            </div>
+            <div class="result">
+                <p class="result__text" disabled></p>
+                <button id="btn-copy" class="btn">Copiar </button>
+            </div>
+        </div>
+        <div class="toast success">
+            Texto copiado
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Desenvolvido por <strong>Daiane Horbach</strong></p>
+    </footer>
+    <script src="scripts/main.js" type="module"></script>
+</body>
+
+</html>
